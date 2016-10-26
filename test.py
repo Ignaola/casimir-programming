@@ -1,9 +1,13 @@
-print('hellow world and i like chicken') #here i add some useless comments
+#print('hellow world and i like chicken') #here i add some useless comments
 
 
-print('blablalalalalala')
-
+#print('blablalalalalala')
+import matplotlib
+matplotlib.use('Agg')
 import matplotlib.pyplot as plt
+from math import pi
+import numpy as np
+
 
 plt.axes()
 
@@ -11,12 +15,9 @@ circle = plt.Circle((0, 0), radius=0.75, fc='y')
 plt.gca().add_patch(circle)
 
 plt.axis('scaled')
-plt.show()
+plt.savefig('fig.png')
 
 
-
-from math import pi
-import numpy as np
 
 def circunference(r):
     from math import pi
