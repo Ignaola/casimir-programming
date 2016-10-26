@@ -5,9 +5,14 @@ print('blablalalalalala')
 
 import matplotlib.pyplot as plt
 
-circle1 = plt.Circle((0, 0), 0.2, color='r')
-fig, ax = plt.subplots()
-ax.add_artist(circle1)
+plt.axes()
+
+circle = plt.Circle((0, 0), radius=0.75, fc='y')
+plt.gca().add_patch(circle)
+
+plt.axis('scaled')
+plt.show()
+
 
 
 from math import pi
