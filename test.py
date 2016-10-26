@@ -7,4 +7,5 @@ def circunference(r):
     return 2*r*pi
 
 def areac(r):
+    print(pi*r**2)
     return pi*r**2
