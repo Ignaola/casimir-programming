@@ -6,7 +6,9 @@ print('blablalalalalala')
 import matplotlib.pyplot as plt
 
 circle1 = plt.Circle((0, 0), 0.2, color='r')
-fig.savefig('plotcircles.png')
+fig, ax = plt.subplots()
+ax.add_artist(circle1)
+
 
 from math import pi
 import numpy as np
