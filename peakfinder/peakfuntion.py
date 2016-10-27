@@ -12,6 +12,6 @@ def myfind_peak(xdata,ydata, min_height, min_dis):
     """this functions should get the data as an x vector and a y vector
     and return the vector with the indexes and the position in x (x[indexes]) of all the peaks in de signal y
     """
-    indexes=peakutils.indexes(y,thres=min_height, min_dist=min_dis)
-    return indexes,x[indexes]
+    indexes=peakutils.indexes(ydata,thres=min_height, min_dist=min_dis)
+    return indexes,xdata[indexes]
     
